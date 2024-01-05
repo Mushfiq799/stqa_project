@@ -34,21 +34,21 @@
                         if ($_SESSION["user_role"] == "admin") {
                     ?>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/online_news_portal/admin/admin_dashboard.php">Admin Dashboard</a>
+                                <a class="nav-link" aria-current="page" href="/online_news_portal/admin/admin_dashboard.php">ADMIN DASHBOARD</a>
                             </li>
                         <?php } else { ?>
 
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/online_news_portal/user/user_dashboard.php">User Dashboard</a>
+                                <a class="nav-link" aria-current="page" href="/online_news_portal/user/user_dashboard.php">USER DASHBOARD</a>
                             </li>
                         <?php }
                     } else {
                         ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="/online_news_portal/signup.php">Sign Up</a>
+                            <a class="nav-link" href="/online_news_portal/signup.php">SIGN UP</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/online_news_portal/login.php">Log In</a>
+                            <a class="nav-link" href="/online_news_portal/login.php">LOG IN</a>
                         </li>
                     <?php } ?>
 
