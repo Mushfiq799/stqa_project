@@ -1,0 +1,59 @@
+1. Crime & Justice
+2. Entertainment
+3. Sports
+4. Business
+5. Coronavirus
+6. Tech & Startup
+7. Politics
+8. Environment
+9. Food & Nutrition
+10. Carreer
+
+INSERT INTO `category`(`category_id`, `category_name`, `upload_date`, `admin_id`)
+VALUES 
+('','Coronavirus','2022-01-11','1'),
+('','Crime & Justice','2022-01-11','1'),
+('','Entertainment','2022-01-11','1'),
+('','Business','2022-01-11','1'),
+('','Sports','2022-01-11','1'),
+('','Tech & Startup','2022-01-11','1'),
+('','Politics','2022-01-11','1'),
+('','Environment','2022-01-11','1'),
+('','Career','2022-01-11','1'),
+('','Food & Nutrition','2022-01-11','1');
+
+1. Crime & Justice * 3
+2. Entertainment 
+3. Sports
+4. Business
+5. Coronavirus
+6. Tech & Startup
+7. Politics
+8. Environment
+9. Food & Nutrition
+10. Career
+
+/ Logo 
+/ Home Sign up Login => font 
+/ Upload Time : 14:22:07 (International format)
+/ LogIn From  & buttton 
+/ Sign ............... 
+
+
+news_prefernece
+id  news_id reader_id like dislike favourite
+1    13       1          0       0        0
+2    1       2          0       0        0
+3    2       1          0       0        1                
+
+CREATE TABLE news_preference(
+    np_id INT NOT NULL AUTO_INCREMENT,
+    news_id INT,
+    reader_id INT,
+    like  boolean NOT NULL,
+    favourite boolean NOT NULL,
+    PRIMARY KEY (np_id),
+    FOREIGN KEY (news_id) REFERENCES news(news_id),
+    FOREIGN KEY (reader_id) REFERENCES reader(reader_id)
+
+)
